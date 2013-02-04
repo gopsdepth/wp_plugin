@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple youtube search include by gopsdepth
 Plugin URI: http://www.satjapotport.co.nf
-Description: Retreive first or value that is indicated in attribute to show as Youtube by text search. It use Wordpress shortcode to show so the youtube video will show with powerful embled. How to use: You just add [f2c_yotube_inc s="your text"], that's all.
+Description: Retreive first or value that is indicated in attribute to show as Youtube by text search. It use Wordpress shortcode to show so the youtube video will show with powerful embled. How to use: You just add [f2c_youtube_inc s="search terms"], that's all.
 Version: 0.1.0
 Author: gopsdepth
 Author URI: http://www.satjapotport.co.nf
@@ -59,4 +59,4 @@ function f2c_youtube_simple_search( $atts ){
 	
 	return $wp_embed->shortcode($atts, $curl);
 }
-add_shortcode( 'f2c_yotube_inc', 'f2c_youtube_simple_search' );
+add_shortcode( 'f2c_youtube_inc', 'f2c_youtube_simple_search' );
